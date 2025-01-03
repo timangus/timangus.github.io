@@ -69,6 +69,7 @@ rss-description: The Assorted Projects of Tim Angus
 # Select which social network share links to show in posts
 share-links-active:
   facebook: true
+  bluesky: true
   linkedin: true
   reddit: true
 
