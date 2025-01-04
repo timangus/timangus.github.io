@@ -15,6 +15,8 @@ Because it was made in the 90s it predates disc brake mounts, so I was stuck wit
 
 Stuck that is, unless I fabricated my own and had it welded on (this predates me getting a welder, or the skill to use one).
 
+![Disc Mount](/assets/bikes/mcm-disc-mount-preweld.jpg)
+
 ![Disc Mount](/assets/bikes/mcm-disc-mount1.jpg)
 
 It cracked at some point, unsurprising in hindsight given the lack of weld prep that I put into the part and the problems with welding Aluminium in general. I made an excessively big chunky gusset and it went back to the welder, and gave me no trouble afterwards.
