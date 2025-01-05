@@ -1,0 +1,8 @@
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.375rem;
+}
+footer .list-inline .list-inline-item {
+  margin-bottom: 0.5rem;
+}
