@@ -3,7 +3,7 @@ layout: post
 title:  "Volkswagen Caddy Head Unit Upgrade"
 date:   2021-08-24 12:00:00 +0100
 cover-img: "/assets/caddy/headunit-12.jpg"
-tags: cars vehicles caddy 3dprinting cad electronics
+tags: cars vehicles caddy 3dprinting cad electronics retrofit
 ---
 Sick of my [Renault Kangoo]({% post_url 2019-04-22-kangoo-repair %}), I reverted to the correct manufacturer and got myself a Volkswagen Caddy. It wasn't cheap by any means, but having been working a pretty well paid contract for the previous year, I felt justified in splurging a little. But of course I wasn't going to leave it in its stock condition.
 

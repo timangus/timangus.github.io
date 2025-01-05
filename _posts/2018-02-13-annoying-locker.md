@@ -3,7 +3,7 @@ layout: post
 title:  "Annoying Locker Mitigation"
 date:   2018-02-13 12:00:00 +0100
 cover-img: "/assets/3dprinting/locker.jpg"
-tags: 3dprinting cad
+tags: 3dprinting cad retrofit
 ---
 One of my old work places had a changing room for those of us who [got sweaty](https://www.strava.com/athletes/1055459) commuting to work, which was great, but the lockers had these incredibly annoying spring loaded hinges that, with your hands full made it very frustrating to get things in and out of them. When you have a 3D printer, there's a phenomenon where suddenly you find solutions popping into your head for minor day-to-day problems such as this.
 

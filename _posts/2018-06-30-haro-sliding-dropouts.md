@@ -3,7 +3,7 @@ layout: post
 title:  "Haro Sonix Sliding Dropouts"
 date:   2018-06-30 12:00:00 +0100
 cover-img: "/assets/bikes/haro-sonix-prototypes.jpg"
-tags: bikes vehicles 3dprinting cad
+tags: bikes vehicles 3dprinting cad retrofit
 ---
 In another post I mentioned my odd frame requiring an eccentric bottom bracket. I got it into my head that I could modify the frame to take sliding dropouts, a much better solution to the problem.
 

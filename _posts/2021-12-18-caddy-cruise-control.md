@@ -3,7 +3,7 @@ layout: post
 title:  "Volkswagen Caddy Cruise Control"
 date:   2021-12-18 12:00:00 +0100
 cover-img: "/assets/caddy/wheel-8.jpg"
-tags: cars vehicles caddy electronics
+tags: cars vehicles caddy electronics retrofit
 ---
 I knew from reading up on it beforehand that the engine ECU in the Caddy could do cruise control, if only the physical controls were available, and the relevant settings toggled. Controls wise, my era of van would have had a separate stalk on the left hand side for this purpose, but I decided it would be nice if it were a bit more modern, with the controls on the steering wheel itself. Furthermore, the stock steering wheel was rather a horrible plastic affair that I wasn't a fan of.
 

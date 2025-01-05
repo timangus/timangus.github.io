@@ -3,7 +3,7 @@ layout: post
 title:  "GK Button Auto Repeat"
 date:   2020-07-27 12:00:00 +0100
 cover-img: "/assets/electronics/gk-button-repeater.jpg"
-tags: guitar electronics software
+tags: guitar electronics software retrofit
 ---
 At some point I upgraded my guitar synth unit to a [Roland GR-55](https://www.roland.com/us/products/gr-55/). This is a fun thing, but has one annoying flaw. Unlikely previous units I had owned, if I *held down* the button on the guitar to change patch, it would only advance by a single patch.
 

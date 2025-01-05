@@ -2,7 +2,7 @@
 layout: post
 title:  "Making a Eccentric Bottom Bracket Fit"
 date:   2016-05-01 12:00:00 +0100
-tags: bikes vehicles workshop cnc milling machining
+tags: bikes vehicles workshop cnc milling machining retrofit
 ---
 For a couple of years I had a very niche bike frame, a Haro Sonix. This hybrid URT design was... odd. To compound the oddness I fitted it with a [Rohloff](https://www.rohloff.de/) Speedhub. Assuming the presence of a derailleur, the frame had no chain tensioning device.
 Time to add one.

@@ -3,7 +3,7 @@ layout: post
 title:  "DTI Collet Holder"
 date:   2023-11-04 12:00:00 +0100
 cover-img: "/assets/milling/dti-holder-2.jpg"
-tags: workshop cnc milling machining
+tags: workshop cnc milling machining retrofit
 ---
 Sometimes when CNC machining it makes sense for the program zero to be directly on some existing circular feature. To measure this position you need to be able to hold a dial test indicator concentric with the spindle, using some kind of holder.
 

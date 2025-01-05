@@ -3,7 +3,7 @@ layout: post
 title:  "Wanhao Fan Timer"
 date:   2020-06-30 12:00:00 +0100
 cover-img: "/assets/electronics/wanhao-fan-2.jpg"
-tags: electronics
+tags: electronics retrofit
 ---
 For the most part I was very happy with my [Wanhao](https://wanhao.store) 3D printer. I performed all the usual upgrades of beefier MOSFETs, better cooling shroud, magnetic bed, [Octoprint](https://octoprint.org/) etc., but one thing always annoyed me; the constantly running cooling fan.
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Google Nest Pattress"
 date:   2023-01-08 12:00:00 +0100
 cover-img: "/assets/3dprinting/heatlink-pattress-2.jpg"
-tags: 3dprinting cad flat property
+tags: 3dprinting cad flat property retrofit
 ---
 When I originally [refurbished my flat]({% post_url 2011-01-01-flat %}) one of the things that I installed was an internet enabled thermostat, meaning that among other things I could turn my heating on and off remotely. By 2023, the [Heatmiser](https://www.heatmiser.com/) unit that I had was showing its age though, so I upgraded to a [Google Nest](https://en.wikipedia.org/wiki/Google_Nest).
 

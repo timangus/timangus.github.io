@@ -3,7 +3,7 @@ layout: post
 title:  "Cinq Shift Lever Extensions"
 date:   2019-06-16 12:00:00 +0100
 cover-img: "/assets/bikes/shift-lever-extension-4.jpg"
-tags: bikes vehicles deviate pinion cinq 3dprinting cad
+tags: bikes vehicles deviate pinion cinq 3dprinting cad retrofit
 ---
 The [Cinq Shift:R](https://www.kickstarter.com/projects/1769923126/cinq-shift-r-for-pinion) trigger shifting system was for the most part very good, but the shift levers themselves were not to my taste.
 

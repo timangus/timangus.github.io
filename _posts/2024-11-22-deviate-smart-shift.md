@@ -3,7 +3,7 @@ layout: post
 title:  "Retrofitting Pinion Smart.Shift"
 date:   2024-11-22 12:00:00 +0100
 cover-img: "/assets/bikes/pinion-ss-21.jpg"
-tags: vehicles bikes deviate 3dprinting cad pinion workshop
+tags: vehicles bikes deviate 3dprinting cad pinion workshop retrofit
 ---
 In 2023, Pinion began a staged release of a new model of their eponymous gearboxes, this one collectively branded [Smart.Shift](https://pinion.eu/en/smartshift/), and it immediately piqued my interest. In contrast to their previous efforts, this one shifted electrically, using a single sided trigger shifter, and promised better shift under load performance to boot. As I've [alluded to before]({% post_url 2019-06-09-cinq-cable-ferrules %}), I wasn't a fan of their grip shift approach, so I was keen to get one.
 

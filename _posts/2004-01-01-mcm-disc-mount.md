@@ -3,7 +3,7 @@ layout: post
 title:  "Giant MCM Disc Mount"
 date:   2004-01-01 12:00:00 +0100
 cover-img: "/assets/bikes/mcm-disc-mount2.jpg"
-tags: bikes vehicles welding workshop
+tags: bikes vehicles welding workshop retrofit
 ---
 I got this bike during university, probably 2002, using my student loan (obviously, what else is it for?). It's a Giant MCM-D 990, an eBay find (£500!) and clearly about 2 sizes too small for me, but it was quite a distinctive thing and always got lots of questions and comments out on the trails. The front triangle is carbon fibre, which was very unusual at the time.
 
