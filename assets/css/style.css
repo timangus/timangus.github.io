@@ -6,3 +6,9 @@ footer .list-inline {
 footer .list-inline .list-inline-item {
     margin-bottom: 0.5rem;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
