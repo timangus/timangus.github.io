@@ -35,7 +35,7 @@ Describing Tremulous' development this way probably makes it sound more intense 
 
 ![Early HUD](/assets/software/tremulous-early-hud2.jpg)
 
-![Balance](/assets/software/tremulous-bsuit-wip.jpg)
+![Battlesuit Modelling](/assets/software/tremulous-bsuit-wip.jpg)
 
 ![Hives](/assets/software/tremulous-hives.jpg)
 
