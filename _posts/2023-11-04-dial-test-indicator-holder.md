@@ -9,7 +9,7 @@ Sometimes when CNC machining it makes sense for the program zero to be directly 
 
 ![AliExpress DTI Holder](/assets/milling/dti-holder.png)
 
-Can we pause for just a second and marvel at how absolutely bonkers it is that something like this can be designed, manufactured and shipped halfway around the world, and still presumably make the seller a profit? Anyway, as you can see this is designed to screw into some fixed point, as opposed to being held in a spindle. You got probably get away with grabbing the stubby thread in a collet, but it's hardly ideal. What could I do instead?
+Can we pause for just a second and marvel at how absolutely bonkers it is that something like this can be designed, manufactured and shipped halfway around the world, and still presumably make the seller a profit? Anyway, as you can see this is designed to screw into some fixed point, as opposed to being held in a spindle. You could probably get away with grabbing the stubby thread in a collet, but it's hardly ideal. What could I do instead?
 
 ![Body Modification](/assets/milling/dti-holder-1.jpg)
 
