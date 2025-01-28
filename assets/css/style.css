@@ -14,3 +14,15 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* bootstrap-social is too old for Bluesky */
+#social-share-section a.btn-bluesky {
+    color: #fff;
+    background-color: #0085ff;
+}
+
+/* In beautifuljekyll.css #social-share-section a has color set to
+   #fff for some reason (bug?), which overrides the reddit black, set in btn-reddit */
+#social-share-section a.btn-reddit {
+    color: #ff4500;
+}
