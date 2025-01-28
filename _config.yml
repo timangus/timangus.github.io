@@ -50,18 +50,18 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  bluesky: timang.us
+  rss: true
   email: "tim@ngus.net"
+  bluesky: timang.us
   facebook: tim.angus
-  github: timangus
-  google-scholar: citations?user=5Sh1XLYAAAAJ
   instagram: timang.us
+  strava: 1055459
+  github: timangus
   linkedin: timangus
   reddit: timangus
-  rss: true
   stackoverflow: "2721809/tim-angus"
-  strava: 1055459
   youtube: "@timangus"
+  google-scholar: citations?user=5Sh1XLYAAAAJ
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -283,4 +283,4 @@ plugins:
   - jekyll-remote-theme
 
 # Beautiful Jekyll / Dean Attali
-remote_theme: daattali/beautiful-jekyll@6.0.1
+remote_theme: daattali/beautiful-jekyll@b1b667e
