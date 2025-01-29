@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function()
 {
     // Select all blog post images and wrap them in links
-    document.querySelectorAll('article.blog-post img').forEach(function(img)
+    document.querySelectorAll('div.blog-post img').forEach(function(img)
     {
         var link = document.createElement('a');
         link.href = img.src;
