@@ -15,14 +15,16 @@ img {
     margin-right: auto;
 }
 
-/* bootstrap-social is too old for Bluesky */
-#social-share-section a.btn-bluesky {
-    color: #fff;
-    background-color: #0085ff;
-}
-
 /* In beautifuljekyll.css #social-share-section a has color set to
    #fff for some reason (bug?), which overrides the reddit black, set in btn-reddit */
 #social-share-section a.btn-reddit {
     color: #ff4500;
 }
+
+/* bootstrap-social is too old for Bluesky */
+.btn-bluesky{color:#fff;background-color:#0085ff;border-color:rgba(0,0,0,0.2)}.btn-bluesky:focus,.btn-bluesky.focus{color:#fff;background-color:#0069cc;border-color:rgba(0,0,0,0.2)}
+.btn-bluesky:hover{color:#fff;background-color:#0069cc;border-color:rgba(0,0,0,0.2)}
+.btn-bluesky:active,.btn-bluesky.active,.open>.dropdown-toggle.btn-bluesky{color:#fff;background-color:#0069cc;border-color:rgba(0,0,0,0.2)}.btn-bluesky:active:hover,.btn-bluesky.active:hover,.open>.dropdown-toggle.btn-bluesky:hover,.btn-bluesky:active:focus,.btn-bluesky.active:focus,.open>.dropdown-toggle.btn-bluesky:focus,.btn-bluesky:active.focus,.btn-bluesky.active.focus,.open>.dropdown-toggle.btn-bluesky.focus{color:#fff;background-color:#005cb3;border-color:rgba(0,0,0,0.2)}
+.btn-bluesky:active,.btn-bluesky.active,.open>.dropdown-toggle.btn-bluesky{background-image:none}
+.btn-bluesky.disabled,.btn-bluesky[disabled],fieldset[disabled] .btn-bluesky,.btn-bluesky.disabled:hover,.btn-bluesky[disabled]:hover,fieldset[disabled] .btn-bluesky:hover,.btn-bluesky.disabled:focus,.btn-bluesky[disabled]:focus,fieldset[disabled] .btn-bluesky:focus,.btn-bluesky.disabled.focus,.btn-bluesky[disabled].focus,fieldset[disabled] .btn-bluesky.focus,.btn-bluesky.disabled:active,.btn-bluesky[disabled]:active,fieldset[disabled] .btn-bluesky:active,.btn-bluesky.disabled.active,.btn-bluesky[disabled].active,fieldset[disabled] .btn-bluesky.active{background-color:#0085ff;border-color:rgba(0,0,0,0.2)}
+.btn-bluesky .badge{color:#0085ff;background-color:#fff}
