@@ -288,4 +288,4 @@ plugins:
   - jekyll-remote-theme
 
 # Beautiful Jekyll / Dean Attali
-remote_theme: daattali/beautiful-jekyll@b1b667e
+remote_theme: daattali/beautiful-jekyll@fad7e83

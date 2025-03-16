@@ -1,13 +1,3 @@
-/* Fix social media margins when they spill over two or more lines */
-footer .list-inline {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1.375rem;
-}
-footer .list-inline .list-inline-item {
-    margin-bottom: 0.5rem;
-}
-
 /* Centre images */
 img {
     display: block;
