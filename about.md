@@ -8,6 +8,6 @@ My name is Tim Angus and I'm a 40-something professional software engineer, livi
 
 ![Portrait](/assets/portrait.jpg)
 
-By the way, "timang", the second-level domain name of this site, is apparently the [Tagalog](https://en.wikipedia.org/wiki/Tagalog_language) word for "stupid" or "idiot". Make of that what you will.
+Fot what it's worth, "timang", the second-level domain name of this site, is apparently the [Tagalog](https://en.wikipedia.org/wiki/Tagalog_language) word for "stupid" or "idiot".
 
-As you can see there's an RSS feed link, my email address, and all my various socials down below. Feel free to subscribe/follow/engage/whatever.
+My socials, RSS feed and email address are below. Feel free to engage.
