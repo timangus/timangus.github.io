@@ -18,3 +18,15 @@ img {
 .btn-bluesky:active,.btn-bluesky.active,.open>.dropdown-toggle.btn-bluesky{background-image:none}
 .btn-bluesky.disabled,.btn-bluesky[disabled],fieldset[disabled] .btn-bluesky,.btn-bluesky.disabled:hover,.btn-bluesky[disabled]:hover,fieldset[disabled] .btn-bluesky:hover,.btn-bluesky.disabled:focus,.btn-bluesky[disabled]:focus,fieldset[disabled] .btn-bluesky:focus,.btn-bluesky.disabled.focus,.btn-bluesky[disabled].focus,fieldset[disabled] .btn-bluesky.focus,.btn-bluesky.disabled:active,.btn-bluesky[disabled]:active,fieldset[disabled] .btn-bluesky:active,.btn-bluesky.disabled.active,.btn-bluesky[disabled].active,fieldset[disabled] .btn-bluesky.active{background-color:#0085ff;border-color:rgba(0,0,0,0.2)}
 .btn-bluesky .badge{color:#0085ff;background-color:#fff}
+
+.footnotes {
+    border-top: 1px solid #ccc;
+    margin-top: 2em;
+    padding-top: 1em;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.footnotes p {
+    margin-bottom: 0.5em;
+}
