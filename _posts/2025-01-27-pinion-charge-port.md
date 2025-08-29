@@ -49,7 +49,7 @@ Having proved the print could work with the epoxy casting, the only thing left t
 
 ![Pre Insertion](/assets/bikes/pinion-charge-port-10.jpg)
 
-It was a bit of a squeeze to get the head of forward most zip tie through the hole, but it's just about large enough.
+It was a bit of a squeeze to get the head of the forward most zip tie through the hole, but it's just about large enough.
 
 ![Installed](/assets/bikes/pinion-charge-port-11.jpg)
 

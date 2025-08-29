@@ -33,6 +33,6 @@ Now for the cruise control itself. It turns out that newer MFSWs (multi-function
 
 ![CC Wiring](/assets/caddy/wheel-9.jpg)
 
-In my case I also needed to re-pin the wheel a little, as in its stock configuration the horn would peep whenever I turned the cruise control on or off; not ideal. Anyway it all turned out well, though I use it less that I anticipated I would. If you get a quiet road it's fantastic, but if there's anybody in front of you they are inevitably unable to keep to a constant speed, so you're better just using the traditional right foot as opposed to constantly toggling the cruise control on and off.
+In my case I also needed to re-pin the wheel a little, as in its stock configuration the horn would peep whenever I turned the cruise control on or off; not ideal. Anyway it all turned out well, though I use it less that I anticipated I would. If you get a quiet road it's fantastic, but if there's anyone in front of you, they are inevitably unable to keep to a constant speed, so you're better just using the traditional right foot as opposed to constantly toggling the cruise control on and off.
 
 ![Finished Wheel](/assets/caddy/wheel-10.jpg)
