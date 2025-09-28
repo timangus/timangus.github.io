@@ -30,3 +30,7 @@ img {
 .footnotes p {
     margin-bottom: 0.5em;
 }
+
+:root {
+  --body-font: sans-serif;
+}
