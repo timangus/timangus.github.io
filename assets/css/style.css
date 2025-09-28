@@ -5,8 +5,8 @@ img {
     margin-right: auto;
 }
 
-/* In beautifuljekyll.css #social-share-section a has color set to
-   #fff for some reason (bug?), which overrides the reddit black, set in btn-reddit */
+/* This is link-color by default, which is fine in light mode where
+   it's dark on light, but in dark mode it becomes light on light  */
 #social-share-section a.btn-reddit {
     color: #ff4500;
 }
