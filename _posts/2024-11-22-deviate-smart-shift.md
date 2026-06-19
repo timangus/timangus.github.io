@@ -27,7 +27,7 @@ I decided instead that it would be better to use a mechanical mount that held th
 
 ![Frame Model](/assets/bikes/pinion-ss-4.png)
 
-The battery holder itself is designed to take advantage of the inherent flexibility of plastic such that it can bend sufficiently to clear the smaller hole which it must pass through, but then rebound into its original shape such that it provides a rear face for clamping into position. This clamping itself is provided by an external cover plate. I felt confident enough in my design now that I thought it had a chance of actually working, so I bit the bullet and ordered a gearbox. Thanks to [some idiots](https://www.bbc.co.uk/news/politics/eu_referendum/results) it took bloody ages to arrive and cost me 25% more than it really needed to, but hey ho.
+The battery holder itself is designed to take advantage of the inherent flexibility of plastic in that it bends sufficiently to clear the smaller hole through which it must pass, but then rebound into its original shape such that it provides a face for clamping into position. The clamping itself is provided by an external cover plate. I felt confident enough in my design now that I thought it had a chance of actually working, so I bit the bullet and ordered a gearbox. Thanks to [some idiots](https://www.bbc.co.uk/news/politics/eu_referendum/results) it took bloody ages to arrive and cost me 25% more than it really needed to, but hey ho.
 
 ![Unboxing](/assets/bikes/pinion-ss-5.jpg)
 
