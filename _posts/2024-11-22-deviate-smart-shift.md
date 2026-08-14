@@ -83,7 +83,7 @@ Incidentally I discovered an [interesting slicer setting](https://www.reddit.com
 
 ![Sensor Cover On](/assets/bikes/pinion-ss-20.jpg)
 
-The [Deviate](https://www.deviatecycles.com/) family of bikes are all so called *high pivot* which means that the sensor cable needed to take a particularly circuitous route in order to connect to the main loom, and as luck would have it said cable was fractionally too short, so I had to [extend it]({% post_url 2024-10-28-cable-extension %}). I now have a [longer one](https://fit-ebike.com/en-en/fit-speed-sensor-with-mini-f-connector/501629) that I'll fit in due course. Besides a few cable management bits and pieces though, it was now sufficiently done to actually use in anger.
+The [Deviate](https://www.deviatecycles.com/) family of bikes are all so called *high pivot* which means that the sensor cable needed to take a particularly circuitous route in order to connect to the main loom, and as luck would have it said cable was fractionally too short, so I had to [extend it]({% post_url 2024-10-28-cable-extension %}). I now have a [longer one](https://fit-ebike.com/en-en/fit-speed-sensor-for-brake-disc-magnet-with-mini-f-plug/501629) that I'll fit in due course. Besides a few cable management bits and pieces though, it was now sufficiently done to actually use in anger.
 
 ![Finished](/assets/bikes/pinion-ss-21.jpg)
 
