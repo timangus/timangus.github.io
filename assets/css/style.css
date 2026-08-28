@@ -34,3 +34,11 @@ img {
 :root {
   --body-font: sans-serif;
 }
+
+/* Section headings within posts get a rule underneath. Scoped to .blog-post so
+   it doesn't catch the h2 post titles in the index/posts listings. */
+.blog-post h2 {
+    margin-top: 2.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--mid-col);
+}
