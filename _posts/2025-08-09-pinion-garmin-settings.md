@@ -9,6 +9,8 @@ In [one of]({% post_url 2024-11-22-deviate-smart-shift %}) my earlier posts wher
 
 ![Pinion's Phone App](/assets/bikes/pinion-garmin-app-1.png)
 
+## Reverse Engineering the Protocol
+
 After posting about my [charge port 3D print]({% post_url 2025-01-27-pinion-charge-port %}), there developed a conversation in the comments beneath the post about the possibility of displaying the current gear on a bike computer. I had previously noticed that there were CAN Bus lines in the loom that I thought might potentially be a source for reverse engineering a system for getting at such data, but the initial commenter pointed out that (obviously, in hindsight) the phone app must communicate with the Smart.Shift box via Bluetooth, and was asking if I might take a look. Initially just using my phone to verify that it was indeed advertising Bluetooth, intrigued, I subsequently got myself a [Bluetooth sniffer dongle](https://wiki.makerdiary.com/nrf52840-mdk-usb-dongle/) and started to look a bit deeper. (Incidentally, I designed and printed a [case](https://www.printables.com/model/1199637-makerdiary-nrf52840-mdk-usb-bluetooth-dongle-case) for the dongle, having stupidly bought the caseless version.)
 
 After some setup gymnastics I got the dongle to work with [Wireshark](https://www.wireshark.org/) and set to work. By going through the options one by one on my phone as I simultaneously did a network traffic capture and screen recording, I was able to correlate the changing bytes to settings I was changing on the phone. It's quite a simple protocol, so relatively quickly I had an idea of how it worked. I would later learn that it's essentially the [CANOpen](https://en.wikipedia.org/wiki/CANopen) protocol, and the data was in the form of SDOs (Service Data Objects). To ease my understanding I wrote a [dissector](https://wiki.wireshark.org/lua/dissectors), basically a plugin that would decode the data so that Wireshark could display it in a more human readable format. Incidentally this gave me strange flashbacks to my first job out of university, where [the game](https://en.wikipedia.org/wiki/Brave:_The_Search_for_Spirit_Dancer) we worked on used [Lua](https://www.lua.org/) as its scripting language; I hadn't used it since then.
@@ -16,6 +18,8 @@ After some setup gymnastics I got the dongle to work with [Wireshark](https://ww
 ![Wireshark Bluetooth Packet Capture](/assets/bikes/pinion-garmin-app-wireshark.png)
 
 I later realised that I could have saved myself quite a lot of effort here by just reverse engineering the phone app itself, but dismissed it as impractical and too time consuming versus just sniffing the data. However, it turns out that the app is written in Javascript, and as such is trivially easy to understand. The wizened old software engineer that I am assumed that something that communicates with actual hardware would be written in a lower level compiled language like C++, or at least Java/C#/Kotlin, but no, Javascript! Learning about Bluetooth sniffing was quite interesting, regardless. Anyway, I digress.
+
+## A First Go with ConnectIQ
 
 From here I started to look into the Garmin ecosystem, to see how the Smart.Shift box might be addressed from a Garmin device, such as my aging [Edge 530](https://www.garmin.com/en-GB/p/621224/). They have a platform called [ConnectIQ](https://developer.garmin.com/connect-iq/overview/) which allows for third party developers to write apps for their devices. I have various critical thoughts about this, but I'll save those for a later [addendum](#and-now-for-my-rants) as they're not really relevant to the job in hand. Anyway, to test the waters, I set about to develop a simple data field that displayed the current gear of the Pinion. It was very quick and dirty, doing the absolute bare minimum of error checking or good abstraction, the point being simply to see if it could be made to work at all.
 
@@ -25,7 +29,11 @@ It's a bit slow due to accumulating polling delay, but as you can see it does wo
 
 (It was at about this time that [Patrick Schlangen](https://patsch.dev/) showed up the comments of the [previous post]({% post_url 2025-01-27-pinion-charge-port %}), having independently followed much the same path as I had, and developed his own gear/battery display Smart.Shift widget. He was finding, as I was, that the connection dropped often and easily, so abandoned his effort there as a result. He subsequently took things much further and made a lot of progress reverse engineering the CAN protocol, as I had originally suggested I might attempt. Unfortunately for other reasons that seems to have also hit a dead end. Nevertheless we had a very interesting conversation. He also has a blog where he documented his project to use [Shimano brake levers with his Pinion](https://patsch.dev/2024/11/14/pinion-smartshift-with-a-shimano-grx-di2-lever/). Check it out!)
 
+## Apps, Widgets and Data Fields
+
 The connection persistence isn't really a great concern from my point of view, where my use case is just turning Pre.Select on and off - having to enter 'pairing' mode is just an inconvenience. Speaking of which, I now turned my attention to how I might implement this function. ConnectIQ apps exist in three flavours: Data Fields, Apps and Widgets. The Data Fields are as already discussed, a non-interactive[^1] way of displaying data to the user. Apps are full blown applications, launched from the Garmin's main menu. Unfortunately, they can only be started when not already engaged in an activity (i.e. a recording of your bike ride), so are not much use for anything *during* a bike ride. That leaves Widgets, that are very much like Apps besides a few restrictions, but crucially they are able to be executed from the Widgets menu, during an activity. So a Widget it was.
+
+## Building the Widget
 
 Good software engineer that I am, I decided to implement the Pinion communication part of my widget as a [library](https://github.com/timangus/garmin-connectiq-pinion-barrel) (or a 'Barrel', in ConnectIQ terms). I'll spare you the details, but I probably went a bit overboard here in terms of my actual needs. If you implement the code for dealing with switching one setting, other settings are obviously going to be very similar, so why not add those too? Long story short, the library can read and change all the settings that you'd realistically want to.
 
@@ -37,6 +45,8 @@ For the [app](https://github.com/timangus/pinion-garmin-settings) itself I decid
   <img src="/assets/bikes/pinion-garmin-app-4.png" alt="Syncing">
 </div>
 
+## The Connection Problem
+
 I mentioned before the difficulty in establishing a connection to the Pinion from the Garmin with my quick hack gear indicator data field. For the purposes of the settings app this was less of a concern, but nevertheless it was still a present irritation, and a confusingly inconsistent one at that — sometimes it would connect and persist absolutely fine. Eventually I established that the pattern was that the connection problems only occurred when I was wearing my [Polar](https://www.polar.com/uk-en/sensors/h10-heart-rate-sensor) heart rate monitor. I found it was configured to connect using [ANT+](https://en.wikipedia.org/wiki/ANT_(network)), so on a whim decided to try switch it over to BLE mode, and... the Pinion/Garmin connection problems immediately went away. Whether this is the fault of Pinion, Garmin, Polar or just the general congestion of the [2.4Ghz radio band](https://en.wikipedia.org/wiki/2.4_GHz_radio_use), I don't know, but it's nice to have that fixed. I may have another look at doing a gear indicator data field, now that this is (apparently) solved, and that I have written a nice library to talk to the Pinion.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
@@ -44,9 +54,13 @@ I mentioned before the difficulty in establishing a connection to the Pinion fro
   <img src="/assets/bikes/pinion-garmin-app-6.png" alt="Information Menu">
 </div>
 
+## The Result
+
 The net result of all of this is that I'm now able to turn my Pre.Select on and off during a bike ride. It still could be a lot better in that in order to do so I first have to put the Smart.Shift box in pairing mode by holding the button, then on the garmin I need to go back to the home screen, up to the status page, up again to select Widgets then select to start the widget, then select to toggle Pre.Select, then all those steps in reverse to get back to my activity. In total it's a [Konami Code](https://en.wikipedia.org/wiki/Konami_Code)-esque Back, Up, Up, Select, Select, Back, Select, which is a lot for what should really just be a long press on one of the shifter buttons or something, but in any case is still way, *way*, **way** better than having to fumble about with my phone during peak Scottish Winter.
 
 <iframe style="width: 100%; aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/9OB08cecnaU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+## Try It Yourself
 
 If you have a Pinion Smart.Shift gearbox and a Garmin Edge device, in theory you could side load[^2] the widget and have a play with it yourself. I have GitHub configured to automatically make [builds](https://github.com/timangus/pinion-garmin-settings/releases/tag/1.0) for various Edge devices, so do feel free. If there are people who actually find this useful I might publish it through more official channels, but given the number of hacks I was forced to employ and quirks I encountered during development, I'm slightly reticent to do so on devices that I don't own and obviously can't test myself. If you do try it out and happen to have something other than an Edge 530, do let me know your experiences and if it works for you. Obviously this is not an official Pinion product, so it may brick your gearbox or void your warranty or eat your homework, and I accept no responsibility for any of that. I mean it won't, but if it does it's not my fault.
 
@@ -55,7 +69,8 @@ Despite some frustrations, this was quite an interesting project to work on. I'm
 <details markdown="1">
 <summary markdown="span">Addendum: ConnectIQ Criticisms (skip this if you don't care about software development)</summary>
 
-#### And now for my rants
+## And Now for My Rants
+
 I'll try and keep this brief. Garmin's third party app ecosystem, ConnectIQ, is a bit of a mess:
 
 * Why did Garmin decide to invent [their own](https://developer.garmin.com/connect-iq/monkey-c/) programming language? There is a [veritable panoply](https://en.wikipedia.org/wiki/List_of_programming_languages) of existing programming languages, many of which are mature and general purpose and would have been perfectly fine for use here. They've needlessly given themselves an unnecessary overhead, and predictably have repeated the mistakes of other languages. MonkeyC was initially a duck-typed language, but at some point they've decided that yes, actually, types are quite a good idea and have retrofitted them to the language, in a manner highly reminiscent of Typescript/Javascript. The result of this is an awkward and unnatural syntax that could have been avoided. In fairness their static type checker seems to work quite well though.

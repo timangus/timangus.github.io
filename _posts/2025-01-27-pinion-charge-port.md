@@ -9,7 +9,11 @@ I covered in an [earlier post]({% post_url 2024-11-22-deviate-smart-shift %}) th
 
 ![Pinion Charge Cable](/assets/bikes/pinion-charge-port-1.jpg)
 
+## An Odd Choice of Connector
+
 I'm a bit perplexed by their choice of connector here, to be frank. It's a connector from [Higo](https://www.higoconnector.com/), a company that specialises in connectors for use in e-bikes. This is all well and good, but given the insertion force required and obvious waterproofing, it seems to me like these are really intended to be used to connect the various internal components of an e-bike together, and not as an end user accessible charging port, where you might expect to find a (sufficiently waterproofed) traditional 3.5mm power jack or such like. It could be that the system was developed more with having a display involved, connecting to the CAN bus lines also found on the connector pins, with the OEM making their own loom extension and choosing their own charging connector, who knows. Never mind, it just seems a bit lazy on Pinion's part, or should I say [FIT E-Bike](https://fit-ebike.com/), who appear to be the partner predominantly responsible for developing the system.
+
+## Casting a Test Piece
 
 Anyway, it is what it is, and in a case of (almost) square peg, (almost) round hole, I needed to find a less ugly way to make it accessible. The connector itself is only a millimetre or so narrower than the hole through which I intended for it to be available so engineering something to hold it in place was going to be tricky from a clearance and tolerance point of view. As a first step I used some silicone putty to take a mould of the orifice I would be working to, and subsequently cast a replica in epoxy resin.
 
@@ -22,6 +26,8 @@ Basically this is a time saving device, wherein testing a prototype does not req
 ![Connector Replica](/assets/bikes/pinion-charge-port-4.jpg)
 
 The black/purple colour here is just from me having covered it in black [Sharpie](https://en.wikipedia.org/wiki/Sharpie_(marker)) marker, the clear resin I used having made it difficult to see what was going on due to internal reflections.
+
+## Printing in TPU
 
 I decided early doors that the only feasible way to make this work was in 3D printing [TPU](https://en.wikipedia.org/wiki/Thermoplastic_polyurethane), creating a small device that held the connector itself while at the same time interfacing with the hole in the frame. TPU differs to standard PLA filament, in that it is flexible, the resultant prints being both pliable and highly resistant to damage, to the extent that I'm pretty confident you could print a [Benchy](https://en.wikipedia.org/wiki/3DBenchy), twat it with a hammer and it suffer no obvious ill effects -- it's amazingly useful stuff.
 
@@ -42,6 +48,8 @@ The flexibility of TPU is useful in three separate ways for my purposes here:
 Actually fixing the connector to the holder was a problem. I briefly considered using some kind of adhesive but this makes repairs or future changes more difficult, so I was keen to avoid this if possible. I had noticed that the rear most cylindrical section of the connector had a very slight negative taper to it, which when clamped creates a mechanical fixing of sorts, albeit a weak one. To actually facilitate the clamping I turned to the humble [zip tie](https://en.wikipedia.org/wiki/Cable_tie), surely one of the unsung heroes of the modern world. The holder has two external channels to locate said zip ties, preventing any lateral movement once tight. The zip tie nearest the frame hole doesn't mechanically arrest the connector like the other does, but it at least provides some additional clamping friction.
 
 ![Prototype](/assets/bikes/pinion-charge-port-8.jpg)
+
+## Fitting It to the Bike
 
 Having proved the print could work with the epoxy casting, the only thing left to do was install it in the real thing.
 

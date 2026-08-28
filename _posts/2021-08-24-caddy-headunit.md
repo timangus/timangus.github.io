@@ -11,6 +11,8 @@ Top of the priority list was getting a modern head unit installed, with a screen
 
 ![Old Head Unit](/assets/caddy/headunit-1.jpg)
 
+## Choosing a Head Unit
+
 The choice for replacing it was quite wide; obviously there are a great many third party options available. In the end I decided to restrict myself to OEM options that VW originally specified, the thinking being that they are more likely to work with the rest of the vehicle functionality and indeed integrate aesthetically more seamlessly. The one I went for in the end was the so called *Composition Media* model, which didn't have built in satnav, but did allow for Android Auto/Apple Carplay. I got it second hand off eBay for a few hundred quid. Generally speaking they're VIN and feature locked, but the advert promised all such restrictions had been lifted, which indeed they had. I'm not sure by which nefarious means such things were defeated; I shall remain in blissful ignorance.
 
 The old stereo used a "standard" Quadlock, but it turns out the new one had a newer "standard" Quadlock. I think initially I used an adapter but eventually ended up re-pinning a new connector as I was putting other stuff in there and it was getting too messy.
@@ -22,6 +24,8 @@ The old stereo used a "standard" Quadlock, but it turns out the new one had a ne
 As such it wasn't quite a it-just-works situation, but with a bit of patience it wasn't too difficult. The new head unit is a 5K7 035 200 K.
 
 ![New Head Unit](/assets/caddy/headunit-4.jpg)
+
+## The USB Socket
 
 Examining the Quadlock pin-out, I assumed that connecting a USB socket (to connect my Android phone) would be straightforward, it having 1 pin each for the standard USB lines. Unfortunately it turned out to be a bit more complicated, in that the (highly expensive) socket you're forced into using has some built in electronics that are presumably there to conditionally enable the data lines if the head unit tells it to do so. I assume this is something to do with upselling software features like Android Auto.
 
@@ -44,6 +48,8 @@ This [adapter](https://www.printables.com/model/156663-vw-volkswagen-usb-to-aux-
 ![USB Adapter](/assets/caddy/headunit-10.jpg)
 
 ![USB Adapter](/assets/caddy/headunit-11.jpg)
+
+## Other Bits and Pieces
 
 Other bits I installed at the same time include a DAB aerial, a microphone for voice activation/hands free and a reversing camera. I'm not sure the aerial gets a lot of use; in practice it rarely gets a good signal. I think this is more a function of DAB than the aerial itself -- as I understand it DAB is really optimised for stationary reception. The reversing camera has been invaluable, however. A rear windowless and long wheel base van can obviously be a bit of a pain to reverse park, so the camera is very helpful.
 

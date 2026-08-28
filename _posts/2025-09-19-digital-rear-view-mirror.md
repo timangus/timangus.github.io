@@ -10,6 +10,8 @@ Driving a van without rear windows, there is obviously also no rear view mirror.
 
 ![Digital Rear View Mirror](/assets/caddy/digital-mirror-dashcam-15.jpg)
 
+## Mounting the Camera
+
 The camera that comes with the kit is designed to stick to the rear screen, assuming you have one, or above the number plate. I already have a camera here for the parking camera connected to the [head unit]({% post_url 2021-08-24-caddy-headunit %}), and besides, for the purposes of seeing rearwards, mounting it there is really lower down than ideal. Instead I decided to place it higher up, in line with where the real sight line would be, had it existed. It turns out that you can get aftermarket third brake lights that integrate a camera, specifically for this purpose.
 
 ![AliExpress Brake Light Camera](/assets/caddy/digital-mirror-dashcam-14.png)
@@ -26,11 +28,15 @@ The usual iterative process was employed and I eventually ended up with a functi
 
 ![Adapter Prototype](/assets/caddy/digital-mirror-dashcam-4.jpg)
 
+## Printing in ASA
+
 PLA, however, was not going to cut it. In addition to not really dealing with heat very well, PLA is also not especially stable under UV light, both properties that make it an unsuitable polymer for use in an outdoor context. Instead therefore, I decided to try printing it with ASA, a close relative of the more common ABS. These plastics don't have the downsides of PLA, but unfortunately are a bit tougher to print. In addition to fuming slightly when melted, ASA and ABS basically require a heated chamber as otherwise printed layers cool too quickly and contract/curl to the point where they don't adhere to the underlying layer; ask me how I know. Rather than replace my geriatric printer with something more modern that has an enclosure, I decided to upgrade what I had using a different means.
 
 ![Printer Upgrade](/assets/caddy/digital-mirror-dashcam-5.jpg)
 
 By simply turning the bed heater on and letting the printer "soak" for half an hour or so prior to printing, the temperature under the box rises to 45°C and ASA prints successfully, without issue. The only real downside to this approach is that by enclosing the entire printer, there is a slight risk of cooking its electronics, but in the grand scheme of things it's a pretty low risk.
+
+## Fixing the Brake Light
 
 In addition to the other components I also made this tiny little shim that glues to the connector socket of the brake light housing. This compensates for the extremely loose interface that presumably results from some injection moulding related failure.
 
@@ -48,6 +54,8 @@ It needed a bit more finagling with a heat gun to bend some of the assembly tabs
 
 ![Rear Light and Camera Fitted](/assets/caddy/digital-mirror-dashcam-7.jpg)
 
+## Wiring It In
+
 Thereafter it was just a case of feeding the wiring through the body, sacrificing the normal quantities of knuckle skin while uttering the necessary traditional four-letter Anglo-saxon incantations. Annoyingly in doing so I obviously tugged on the cable a bit too hard at some point, because the connection to the rear camera proved unreliable. Either that or the cable was defective from the get go, and indeed that was my story to their very responsive support team, who supplied a replacement cable free of charge. The only downside here was they had no UK stock, so I had to wait a frustrating few weeks while one was shipped from China.
 
 ![Wiring at the Rear](/assets/caddy/digital-mirror-dashcam-6.jpg)
@@ -56,9 +64,13 @@ Auto-Vox's solution to patching the wiring in your vehicle is to provide connect
 
 ![Wiring at the Front](/assets/caddy/digital-mirror-dashcam-8.jpg)
 
+## Mounting the Mirror
+
 As far as mounting the mirror itself goes, it's a universal fitment affair, complete with a range of adapters to suit various vehicle manufacturers' mounting solutions. I followed the instructions for a VW and found that while it worked, the mirror had a tendency to jiggle a bit -- all a bit unconvincing. I re-read the instructions several times in case I had got the wrong end of the stick as to my mind it's a case of surely-they-can't-mean-for-it-to-work-this-way. Incidentally, if anyone who has one of these in a VW has any insight here into what they're thinking, I'm open all ears. To compensate I designed a little widget that slots into the void in order to provide something solid for the screws to bear against. I printed it in ASA, for the aforementioned heat resistant properties. If it proves inadequate in this regard, I guess I'll just mill it out of aluminium instead, but for now this serves to firm up the mounting, eliminating the wiggle.
 
 ![Mounting Widget](/assets/caddy/digital-mirror-dashcam-3.png)
+
+## In Use
 
 When all is said and done, it works quite well, although it's taking a bit of getting used to having driven without a mirror for so long. The software could be better. In particular the touchscreen lags significantly behind the display, which is of no consequence 99% of the time, but when trying to set up the reversing guide lines it's *highly* annoying. Speaking of the reversing guide lines, I can't comprehend why they've made it possible to individually adjust the left and right lines independently -- in what possible circumstance would you ever want them to be asymmetric? By default it makes noises, which mercifully there is an option to disable, but on power up they've obviously forgotten to clear the audio buffer and it briefly pops. This is the kind of thing that almost no one will care about, but because I know why it's happening I find it irritating.
 

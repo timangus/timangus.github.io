@@ -9,6 +9,8 @@ Towards the end of 2018, with the Corrado still sitting idle, I started to think
 
 I took it for a test drive and although it was a bit smokey it seemed to run OK. Alarm bells should have rung when the highly dodgy fellow I bought it from claimed it was the non-turbo version, despite there clearly being a turbo in the usual spot. That and the puddle of coolant that was gradually dripping onto the ground. Viewed from a certain perspective, he was actually right about it being a non-turbo version, as I had to replace the turbo a little while later, it having excessive axial play in the bearing. I also had to fix the sporadically functional speedometer by replacing the electromechanical speed sensor (a device that I thought went out of fashion the in the 80s), and a worn out whiny belt tensioner. There was also a dead wheel bearing and a decidedly non-planar wheel hub, which probably caused the dead wheel bearing. But those were the least of the problems.
 
+## The Head Gasket
+
 Remember the puddle of coolant? Well, the coolant hoses seemed to be under pressure from cold, and the coolant itself was turning a lovely fetching shade of jet black. Yup, head gasket.
 
 ![Kangoo Head Gasket](/assets/kangoo/headgasket.jpg)
@@ -32,6 +34,8 @@ This past failure was in the same cylinder around which the head gasket failed, 
 Anyway, I bolted it up to the correct torque (R.F.T.), lowered the engine down onto its mounts and... snagged the power steering line. Sigh. I had a little go at welding the nick closed but couldn't make it seal. My usual scrappy didn't have any Kangoos in the yard, but they did have a Nissan NV200, which is basically just a re-badge. The line out of this didn't fit exactly right, but it was close enough to not matter. It all went back together straightforwardly after that, and indeed drove much better, probably down to the cleaned up intake more than anything else. Confidence levels were not high though.
 
 ![Kangoo Confidence](/assets/kangoo/low-confidence.jpg)
+
+## Getting Rid of It
 
 Ultimately I got rid of it a couple of years later, growing tired of not being sure if I was going to make it to my destination whenever I ventured out it in. It had a weird hot start problem that I never got to the bottom of. I suspect it was a worn high pressure fuel pump that when warm couldn't achieve sufficient pressure for the ECU to turn the injectors on. That was my theory anyway; it didn't make economic sense to try replacing the pump, though it still annoys me a little that I never managed to figure it out.
 

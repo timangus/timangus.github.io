@@ -13,6 +13,8 @@ It seemed like a good idea to kill two birds with one stone and upgrade to a lea
 
 ![Damaged Wheel](/assets/caddy/wheel-2.jpg)
 
+## Refurbishing the Wheel
+
 I found a random leather refurbishment kit on Amazon, and got to work. The basic idea is that you sand the leather back, fill it with what appears to be for all intents and purposes acrylic varnish (I don't know this for certain, don't @ me), then when a satisfactory surface has been achieved, dab black vinyl paint over it.
 
 ![Refurbing Wheel](/assets/caddy/wheel-3.jpg)
@@ -26,6 +28,8 @@ My expectations for the results were, if I'm honest, quite low, but it turned ou
 ![Refurbed Wheel](/assets/caddy/wheel-6.jpg)
 
 ![Refurbed Wheel](/assets/caddy/wheel-7.jpg)
+
+## Making the Buttons Work
 
 Now for the cruise control itself. It turns out that newer MFSWs (multi-function steering wheels) don't speak the correct protocol to activate cruise control on a Caddy of my era, though all the other controls operate as expected. There was a solution though, through a certain [piggy back](http://forum.xhorse.uk/viewforum.php?f=31) module that translated the MSFW messages to something the Caddy could understand. It doesn't appear to be available for sale any more, I suspect because it had a certain support overhead in many, many people not properly reading the instructions or understanding how to install it, which to be fair probably isn't for the faint of heart, requiring soldering.
 
