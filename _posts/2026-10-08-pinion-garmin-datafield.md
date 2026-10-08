@@ -28,23 +28,23 @@ This is quite frustrating really, as the Garmin Edge (and indeed watch) devices 
 I mentioned before that I wanted the data field to configurably display two things: the current gear and the battery level. The former is simply rendered as text, whereas the latter I've gone to the effort of making a dynamic battery icon that is coloured appropriately to catch your eye when charge levels drop below a certain point.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="/assets/bikes/pinion-garmin-datafield-1.png" alt="Gear Only" style="width: 32%;">
-  <img src="/assets/bikes/pinion-garmin-datafield-2.png" alt="Gear and Battery" style="width: 32%;">
-  <img src="/assets/bikes/pinion-garmin-datafield-3.png" alt="Low Battery" style="width: 32%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-1.png" alt="Gear Only" style="width: 40%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-2.png" alt="Gear and Battery" style="width: 40%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-3.png" alt="Low Battery" style="width: 40%;">
 </div>
 
 Additionally the whole field acts as a toggle switch, on touchscreen devices at least. Its effect is configurable in the settings; in my case I intended it to be used for turning Pre.Select on and off, basically the entire point of the widget I developed previously.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="/assets/bikes/pinion-garmin-datafield-4.png" alt="Settings" style="width: 40%;">
-  <img src="/assets/bikes/pinion-garmin-datafield-5.png" alt="Tap Action" style="width: 40%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-4.png" alt="Settings" style="width: 50%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-5.png" alt="Tap Action" style="width: 50%;">
 </div>
 
 When Pre.Select is enabled the whole field turns green, otherwise it uses the default background colour.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="/assets/bikes/pinion-garmin-datafield-6.png" alt="Pre.Select Off" style="width: 40%;">
-  <img src="/assets/bikes/pinion-garmin-datafield-7.png" alt="Pre.Select On" style="width: 40%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-6.png" alt="Pre.Select Off" style="width: 50%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-7.png" alt="Pre.Select On" style="width: 50%;">
 </div>
 
 Insofar as this is the functionality I aimed for, the project has been a complete success.
@@ -54,7 +54,7 @@ Insofar as this is the functionality I aimed for, the project has been a complet
 *Unfortunately*, as I noted in my previous forays into interfacing a Garmin with the Pinion, the connection is not reliable enough for it to be practical. With my 530, I found that my heart rate monitor was interfering in some way, and that by reconfiguring it to use BLE rather than ANT+, the connection was much improved, albeit not perfect. With the new 850 on the other hand, it only seems able to maintain a connection for roughly 90 seconds at a time, before disconnecting, regardless of whether I have other active radio devices (such as my HRM) in range or not. Who knows why this is — RF comms seems to me to be mostly witchcraft.
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="/assets/bikes/pinion-garmin-datafield-8.png" alt="Connecting" style="width: 40%;">
+  <img src="/assets/bikes/pinion-garmin-datafield-8.png" alt="Connecting" style="width: 50%;">
 </div>
 
 Pinion's decision to facilitate connections via this not-actually-pairing pairing procedure surely doesn't help. This means that even though I have the software set up to continually try to reconnect, it can't unless the Pinion is in pairing mode, which requires holding the rear button for 3 seconds. Proper BLE bonding would have been the sensible move here. Given previous interactions with them, I think it unlikely that they will change their policy or their software, and to be fair I don't really blame them as there is little incentive other than good will, weighed against (for them) a whole lot of risk.
