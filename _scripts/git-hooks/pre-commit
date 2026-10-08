@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Refuse to commit images that contain GPS location data.
+# Enable with: git config core.hooksPath _scripts/git-hooks
+
+if ! command -v exiftool >/dev/null; then
+    echo "pre-commit: exiftool is needed to check images for GPS data" >&2
+    exit 1
+fi
+
+tmp=$(mktemp -d)
+trap 'rm -rf "$tmp"' EXIT
+
+# Copy the staged versions (not the working tree) out so exiftool runs once
+names=()
+while IFS= read -r -d '' file; do
+    case "${file,,}" in
+        *.jpg|*.jpeg|*.png|*.heic|*.heif|*.tif|*.tiff|*.webp) ;;
+        *) continue ;;
+    esac
+    git show ":$file" > "$tmp/${#names[@]}.${file##*.}"
+    names+=("$file")
+done < <(git diff --cached --name-only -z --diff-filter=ACMR)
+
+(( ${#names[@]} )) || exit 0
+
+found=()
+while IFS= read -r i; do
+    found+=("${names[${i%%.*}]}")
+done < <(exiftool -q -q -a -if '$GPSLatitude or $GPSLongitude' -p '$FileName' "$tmp")
+
+if (( ${#found[@]} )); then
+    echo "pre-commit: these images contain GPS location data:" >&2
+    printf '  %s\n' "${found[@]}" >&2
+    echo >&2
+    echo "Strip it, then stage them again:" >&2
+    printf '  exiftool -gps:all= -xmp:gps*= -overwrite_original' >&2
+    printf ' %q' "${found[@]}" >&2
+    echo >&2
+    exit 1
+fi

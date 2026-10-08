@@ -5,7 +5,8 @@ This is the source code for my making and engineering blog, [timang.us](https://
 ## Setup and Run
 
 ```bash
-sudo apt install jekyll ruby-dev
+sudo apt install jekyll ruby-dev libimage-exiftool-perl
+git config core.hooksPath _scripts/git-hooks
 bundle config set --local path 'vendor/bundle'
 bundle install
 bundle exec jekyll serve
