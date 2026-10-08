@@ -3,7 +3,7 @@ layout: post
 title:  "Garmin Datafield for Pinion Smart.Shift"
 date:   2026-10-08 12:00:00 +0100
 cover-img: "/assets/bikes/pinion-garmin-datafield-cover.jpg"
-tags: vehicles bikes deviate pinion software
+tags: vehicles bikes pinion software
 ---
 I recently got myself a new Garmin, of the [Edge 850](https://www.garmin.com/en-GB/p/1630197/) variety. I got it from eBay at a relative steal, from a vendor who purported to be London-based. The package tracking however told a different story, with the item originating in Kansas, USA, before being cancelled(!), then a new tracking link was issued saying it was coming from Florida, with a different carrier. Eventually it was delivered in Amazon packaging, addressed to "Martin" (no surname) at my address. Mercifully I didn't pay any import duties/taxes as I had feared. Quite dodgy on many levels, but nevertheless it was intact, boxed, unopened, and fully functional.
 

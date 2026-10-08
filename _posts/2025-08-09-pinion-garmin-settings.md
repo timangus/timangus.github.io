@@ -3,7 +3,7 @@ layout: post
 title:  "Garmin App for Pinion Smart.Shift Settings"
 date:   2025-08-09 12:00:00 +0100
 cover-img: "/assets/bikes/pinion-garmin-app-cover.jpg"
-tags: vehicles bikes deviate pinion software
+tags: vehicles bikes pinion software
 ---
 In [one of]({% post_url 2024-11-22-deviate-smart-shift %}) my earlier posts where I discuss my first impressions of the [Pinion Smart.Shift](https://pinion.eu/en/smartshift/) gearbox I had fitted to my bike, I had a little moan about the missed opportunity in the *Pre.Select* auto shifting feature. This is a setting where a gear is automatically pre-selected if the system detects you're coasting. In general I like it, but it becomes annoying when switched on all the time. For me I only really want it enabled on descents, where it comes into its own. What is really needed is a simple way to easily toggle it on and off as and when required. Sadly Pinion don't agree, and the only way you can do so is via the phone app. When you're covered in mud and have got gloves on, and your phone is safely tucked away in your backpack, it's really not very convenient to have to get it out, take your gloves off, hunt around for the app etc., just to change a single setting.
 
