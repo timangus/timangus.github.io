@@ -59,7 +59,7 @@ Insofar as this is the functionality I aimed for, the project has been a complet
 
 Pinion's decision to facilitate connections via this not-actually-pairing pairing procedure surely doesn't help. This means that even though I have the software set up to continually try to reconnect, it can't unless the Pinion is in pairing mode, which requires holding the rear button for 3 seconds. Proper BLE bonding would have been the sensible move here. Given previous interactions with them, I think it unlikely that they will change their policy or their software, and to be fair I don't really blame them as there is little incentive other than good will, weighed against (for them) a whole lot of risk.
 
-This is all to say that I think the entire data field endeavour is basically a dead end. It's a frustrating missed opportunity from Pinion's perspective, if you ask me. Oh well.
+This is all to say that I think the entire data field endeavour is basically a dead end. It's a frustrating missed opportunity from Pinion's perspective, if you ask me. Oh well. The only thing I can think of left to do, for my specific use case, is to implement a data field that's not a data field, in that it's just a switch for Pre.Select. The idea would be that you'd tap it and it would connect, toggle Pre.Select, then disconnect. This does nothing from an indication point of view, but it would at least hugely reduce the number of required button presses/taps vs my fully fledged settings app. It would also obviously be touchscreen only. So maybe I'll see you in chapter 3. Or not. We'll see.
 
 ## Try It Yourself
 
