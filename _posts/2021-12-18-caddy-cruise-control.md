@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Volkswagen Caddy Cruise Control"
+share-description: "Adding cruise control to a VW Caddy with a refurbished T6 multi-function steering wheel and a piggy-back module to translate its button signals."
 date:   2021-12-18 12:00:00 +0100
 cover-img: "/assets/caddy/wheel-8.jpg"
 tags: cars vehicles caddy electronics retrofit

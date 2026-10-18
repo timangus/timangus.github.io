@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Garmin App for Pinion Smart.Shift Settings"
+share-description: "Reverse engineering the Pinion Smart.Shift Bluetooth protocol and building a Garmin Connect IQ widget to change gearbox settings, like Pre.Select, mid-ride."
 date:   2025-08-09 12:00:00 +0100
 cover-img: "/assets/bikes/pinion-garmin-app-cover.jpg"
 tags: vehicles bikes pinion software

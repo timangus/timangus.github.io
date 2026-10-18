@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Garmin Datafield for Pinion Smart.Shift"
+share-description: "A Garmin Connect IQ data field showing Pinion Smart.Shift gear and battery, with tap-to-toggle Pre.Select, and why unreliable Bluetooth makes it a dead end."
 date:   2026-10-08 12:00:00 +0100
 cover-img: "/assets/bikes/pinion-garmin-datafield-cover.jpg"
 tags: vehicles bikes pinion software

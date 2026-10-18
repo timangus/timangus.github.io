@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Retrofitting Pinion Smart.Shift"
+share-description: "How I fitted a Pinion Smart.Shift gearbox to a Deviate Guide, mounting its battery internally in the carbon frame with a 3D-printed holder inserted via a freshly cut access hole."
 date:   2024-11-22 12:00:00 +0100
 cover-img: "/assets/bikes/pinion-ss-21.jpg"
 tags: vehicles bikes deviate 3dprinting cad pinion workshop retrofit

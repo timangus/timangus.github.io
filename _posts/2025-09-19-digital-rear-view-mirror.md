@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Digital Rear View Mirror"
+share-description: "Fitting a digital rear view mirror to a windowless VW Caddy van, with the camera in a third brake light housing and 3D-printed ASA mounts."
 date:   2025-09-19 12:00:00 +0100
 cover-img: "/assets/caddy/digital-mirror-dashcam-13.jpg"
 tags: 3dprinting cad caddy cars electronics retrofit vehicles

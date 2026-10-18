@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bin Tracker"
+share-description: "My wheelie bin kept disappearing, so I hid a Bluetooth tracker on it in a discreet 3D-printed housing to find out where it goes."
 date:   2026-02-16 12:00:00 +0100
 cover-img: "/assets/3dprinting/bin-tracker-1.jpg"
 tags: 3dprinting cad property

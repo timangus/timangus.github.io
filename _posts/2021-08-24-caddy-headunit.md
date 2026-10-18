@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Volkswagen Caddy Head Unit Upgrade"
+share-description: "Upgrading a VW Caddy to an OEM Composition Media head unit with Android Auto, plus a 3D-printed USB adapter, DAB aerial and reversing camera."
 date:   2021-08-24 12:00:00 +0100
 cover-img: "/assets/caddy/headunit-12.jpg"
 tags: cars vehicles caddy 3dprinting cad electronics retrofit

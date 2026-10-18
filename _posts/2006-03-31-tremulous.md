@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Tremulous"
+share-description: "How Tremulous, the aliens-vs-humans Quake 3 mod I started as an undergraduate, became a free standalone game with hundreds of thousands of players."
 date:   2006-03-31 12:00:00 +0100
 cover-img: "https://tremulous.net/screenshots/1.jpg"
 tags: software games

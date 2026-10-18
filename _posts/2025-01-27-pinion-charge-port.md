@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Pinion Smart.Shift Charge Port"
+share-description: "A flexible TPU 3D-printed holder that turns the Pinion Smart.Shift battery's awkward Higo connector into a tidy, capped charge port in the frame."
 date:   2025-01-27 12:00:00 +0100
 cover-img: "/assets/bikes/pinion-charge-port-9.jpg"
 tags: vehicles bikes deviate 3dprinting cad pinion retrofit
